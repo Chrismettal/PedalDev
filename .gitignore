@@ -1,0 +1,47 @@
+# Default
+_gitignored/*
+ 
+# office lock files
+.~lock*
+
+# KiCad # Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+pcb/*.xml
+pcb/*.csv
+
+# FreeCAD backup files
+*.FCBak
+*.FCStd*
+!*.FCStd
+
+# VSCode
+*.code-workspace
+.vscode/
+
+# Markdown notes that are usually linked here
+Notebook.md
+
+# Offline project information linked here
+link_*
