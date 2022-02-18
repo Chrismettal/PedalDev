@@ -1249,8 +1249,8 @@
   )
 
   (no_connect (at 82.804 56.388) (uuid 4fcf3a5b-6abb-4cdb-8d78-27bb38e56c52))
-  (no_connect (at 82.804 61.468) (uuid 4fcf3a5b-6abb-4cdb-8d78-27bb38e56c52))
-  (no_connect (at 98.044 58.928) (uuid 4fcf3a5b-6abb-4cdb-8d78-27bb38e56c52))
+  (no_connect (at 82.804 61.468) (uuid 4fcf3a5b-6abb-4cdb-8d78-27bb38e56c53))
+  (no_connect (at 98.044 58.928) (uuid 4fcf3a5b-6abb-4cdb-8d78-27bb38e56c54))
 
   (wire (pts (xy 95.25 133.35) (xy 87.63 133.35))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2189,7 +2189,7 @@
     (property "Value" "AudioJack3" (id 1) (at 44.45 93.3449 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 52.07 92.71 0)
+    (property "Footprint" "MeineBib:Audio_Jack_PJ-602B" (id 2) (at 52.07 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 52.07 92.71 0)
@@ -2363,7 +2363,7 @@
     (property "Value" "Barrel_Jack" (id 1) (at 54.61 128.27 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 50.8 122.174 0)
+    (property "Footprint" "MeineBib:DC_Barrel_Jack_Thinline_Wired_Standing" (id 2) (at 50.8 122.174 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 50.8 122.174 0)
@@ -2623,7 +2623,7 @@
     (property "Value" "AudioJack3" (id 1) (at 259.08 143.5099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 250.825 142.875 0)
+    (property "Footprint" "MeineBib:Audio_Jack_PJ-602B" (id 2) (at 250.825 142.875 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 250.825 142.875 0)
@@ -2867,13 +2867,13 @@
       (reference "D1") (unit 1) (value "LED") (footprint "LED_THT:LED_D5.0mm")
     )
     (path "/37778a1f-86de-4449-abb1-14af5009805a"
-      (reference "J1") (unit 1) (value "AudioJack3") (footprint "")
+      (reference "J1") (unit 1) (value "AudioJack3") (footprint "MeineBib:Audio_Jack_PJ-602B")
     )
     (path "/ce833355-b6f2-4a51-9de8-dda19b75db2a"
-      (reference "J2") (unit 1) (value "AudioJack3") (footprint "")
+      (reference "J2") (unit 1) (value "AudioJack3") (footprint "MeineBib:Audio_Jack_PJ-602B")
     )
     (path "/680b3e96-c480-445f-a2bf-28a5c2056d8e"
-      (reference "J3") (unit 1) (value "Barrel_Jack") (footprint "")
+      (reference "J3") (unit 1) (value "Barrel_Jack") (footprint "MeineBib:DC_Barrel_Jack_Thinline_Wired_Standing")
     )
     (path "/43624bd7-5b28-4455-bedf-a59e39f0128d"
       (reference "J4") (unit 1) (value "Conn_01x04") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical")
