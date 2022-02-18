@@ -466,11 +466,6 @@
       (net 10 "Upper_PCB_Input") (pinfunction "Pin_3") (pintype "passive") (tstamp 4d678553-32d7-45bd-9d46-d6af3fd1f3d2))
     (pad "4" thru_hole oval (at 0 7.62 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 11 "Upper_PCB_Output") (pinfunction "Pin_4") (pintype "passive") (tstamp 83f23a64-3e86-4835-b844-c2deee9a88e3))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.wrl" hide
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
