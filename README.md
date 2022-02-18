@@ -18,6 +18,7 @@ If you like my work please consider supporting my caffeine addiction!
 - [Concept](#concept)
 - [Parts](#parts)
 - [Lower PCB](#lower-pcb)
+- [Sources](#sources)
 - [License](#license)
 
 
@@ -34,6 +35,20 @@ Ultra
 ## Lower PCB
 
 I guess
+
+
+## Sources
+
+The following 3D models were used for the simulation renders in KiCAD and FreeCAD:
+
+| File                | Link                                                    |
+| ------------------- | ------------------------------------------------------- |
+| Hammond 1590B       | https://www.hammfg.com/part/1590B                       |
+| PJ-602B Audio jacks | https://github.com/afedorov3/3DModels                   |
+| Footswitch_3PDT     | https://grabcad.com/library/3pdt-switch-1               |
+| 9mm potentiometers  | https://grabcad.com/library/alpha-rd901f-40-15r1-1      |
+| DC barrel jack      | https://grabcad.com/library/5-5mm-panel-mount-dc-jack-1 |
+| LED 5mm             | https://grabcad.com/library/led-5mm-1#!                 |
 
 
 ## License
