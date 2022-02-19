@@ -1036,7 +1036,7 @@
       (net 8 "Net-(D1-Pad1)") (pinfunction "C") (pintype "passive") (tstamp 2f22ea40-ec20-4280-96eb-4fafad9cd499))
     (model "${MEINE_BIBS}/MeineBib.3dshapes/Footswitch_3PDT.wrl"
       (offset (xyz -9 -6.5 0))
-      (scale (xyz 0.4 0.4 0.4))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1163,14 +1163,24 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_0,48.wrl"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_048.wrl"
       (offset (xyz 0 0 -2.1))
-      (scale (xyz 0.4 0.4 0.7))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_0,48.wrl"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_048.wrl"
       (offset (xyz 2.54 0 -2))
-      (scale (xyz 0.4 0.4 0.7))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_048.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_048.wrl"
+      (offset (xyz 2.54 0 0))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1205,17 +1215,17 @@
       (net 16 "Net-(J3-Pad2)") (pintype "passive") (tstamp 0a3e9ad5-9fa0-4370-99b4-46771c595f37))
     (model "${MEINE_BIBS}/MeineBib.3dshapes/DC_Barrel_Jack_Thinline_Standing_Wire.wrl"
       (offset (xyz 8.4 0 6))
-      (scale (xyz 0.4 0.4 0.4))
+      (scale (xyz 1 1 1))
       (rotate (xyz 91.25 180 90))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_0,48.wrl"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_048.wrl"
       (offset (xyz -3.54 -2.6 -2.5))
-      (scale (xyz 0.4 0.4 0.35))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_0,48.wrl"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/Leg_048.wrl"
       (offset (xyz -4.95 2.6 -2.5))
-      (scale (xyz 0.4 0.4 0.35))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1471,7 +1481,7 @@
       (net 2 "GND") (pintype "passive") (tstamp 2fbc7fe5-fc69-4304-9045-caa4d6eafb52))
     (pad "T" thru_hole oval (at -15 2.5 180) (size 3.4 1.35) (drill oval 2.9 0.85) (layers *.Cu *.Mask)
       (net 12 "/Input") (pintype "passive") (tstamp e9e0d9a6-c15b-4152-bc24-a343c5579593))
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PJ-602B.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PJ-602B.wrl"
       (offset (xyz 7.5 0 -0.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 -1.25 180))
@@ -1621,7 +1631,7 @@
       (net 2 "GND") (pintype "passive") (tstamp 3100eb76-ffab-473b-bd97-eb726f1a5d21))
     (pad "T" thru_hole oval (at -15 2.5) (size 3.4 1.35) (drill oval 2.9 0.85) (layers *.Cu *.Mask)
       (net 18 "/Output") (pintype "passive") (tstamp 96dda813-d169-416a-846e-ba3a7a4950d0))
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PJ-602B.stp"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PJ-602B.wrl"
       (offset (xyz 7.5 0 -0.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 -1.25 180))
@@ -1708,7 +1718,6 @@
   (gr_line (start 174 116) (end 173.5 116) (layer "Edge.Cuts") (width 0.1) (tstamp 174ca04a-9f2a-43b3-91e1-2786189f0c84))
   (gr_line (start 175.5 82.5) (end 175.5 114.5) (layer "Edge.Cuts") (width 0.1) (tstamp 23d188ec-edc0-4874-b7eb-30bf173ca0d6))
   (gr_arc (start 169.5 120) (mid 170.671573 117.171573) (end 173.5 116) (layer "Edge.Cuts") (width 0.1) (tstamp 4358346c-a6ca-402f-813e-2881515885e6))
-  (gr_line (start 132.45 105.4) (end 132.45 107.74) (layer "Edge.Cuts") (width 0.1) (tstamp 438851fe-2577-4981-849c-67ed30354f77))
   (gr_line (start 123.5 82.5) (end 123.5 114.5) (layer "Edge.Cuts") (width 0.1) (tstamp 48092370-23e6-44e9-986d-955e0c873f50))
   (gr_arc (start 131 122) (mid 129.93934 121.56066) (end 129.5 120.5) (layer "Edge.Cuts") (width 0.1) (tstamp 6292d3bf-853a-4f7a-90e1-e0e1cf61f750))
   (gr_line (start 126 80) (end 173 80) (layer "Edge.Cuts") (width 0.1) (tstamp 8e9ffdc0-ecda-48ec-822d-25f3fb6787cd))
