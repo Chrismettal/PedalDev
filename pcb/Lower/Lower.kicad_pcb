@@ -90,7 +90,7 @@
     )
   )
 
-  (property "Commit" "abcd123")
+  (property "Commit" "e9c2911")
 
   (net 0 "")
   (net 1 "+9V")
@@ -4280,6 +4280,9 @@
   )
   (gr_text "In" (at 153.31 86.91 90) (layer "F.SilkS") (tstamp c5158c19-53de-4f4f-9970-2400dc73dff1)
     (effects (font (size 0.7 0.7) (thickness 0.13)))
+  )
+  (gr_text "${Commit}" (at 125.4 93.5 270) (layer "F.SilkS") (tstamp c8501f4b-456d-41e0-a24b-fc6377f8ad6d)
+    (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text "9V" (at 148.23 86.91 90) (layer "F.SilkS") (tstamp cfff2499-7b69-437f-87ea-25906fe0c198)
     (effects (font (size 0.7 0.7) (thickness 0.13)))
