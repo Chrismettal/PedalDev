@@ -2140,7 +2140,7 @@
     (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" (id 2) (at 80.9752 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/szlcsc/1811201537_Lelon-VZT101M1V0606-TRO_C249982.pdf" (id 3) (at 80.01 127 0)
+    (property "Datasheet" "" (id 3) (at 80.01 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC" "C108360" (id 4) (at 80.01 127 0)
