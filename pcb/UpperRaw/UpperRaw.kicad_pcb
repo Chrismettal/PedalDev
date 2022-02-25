@@ -435,6 +435,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnob.wrl"
+      (offset (xyz 7.5 -2.5 0.6))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (footprint "MeineBib:Switch_toggle_DPDT_Print" (layer "B.Cu")
@@ -577,6 +582,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnob.wrl"
+      (offset (xyz 7.5 -2.5 0.6))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (footprint "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" (layer "B.Cu")
@@ -628,6 +638,11 @@
       (net 10 "unconnected-(RV101-Pad3)") (pinfunction "3") (pintype "passive") (tstamp 3db2416c-ce2e-41f9-b6c0-240058082bf5))
     (model "${MEINE_BIBS}/MeineBib.3dshapes/alpha_pot_RD901F-40-15R1.step"
       (offset (xyz 7.5 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnob.wrl"
+      (offset (xyz 7.5 -2.5 0.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
