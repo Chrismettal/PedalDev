@@ -902,7 +902,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x01") (at 163.83 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f7a1fee7-d81c-4e02-8116-b09f7e2d95c2)
-    (property "Reference" "J?" (id 0) (at 166.37 118.1099 0)
+    (property "Reference" "J14" (id 0) (at 166.37 118.1099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x01" (id 1) (at 166.37 120.6499 0)
@@ -991,6 +991,9 @@
     (path "/765bd680-e16c-4cff-83c5-1a9ae6d9e075"
       (reference "J13") (unit 1) (value "Conn_01x01") (footprint "MeineBib:Protopin")
     )
+    (path "/f7a1fee7-d81c-4e02-8116-b09f7e2d95c2"
+      (reference "J14") (unit 1) (value "Conn_01x01") (footprint "MeineBib:Protopin")
+    )
     (path "/2f3efa35-c3e1-45a2-83bc-04184a4ef9cc"
       (reference "J41") (unit 1) (value "Conn_01x01") (footprint "MeineBib:Protopin")
     )
@@ -1011,9 +1014,6 @@
     )
     (path "/7158a563-e006-4c52-ae8c-fd5d8c05d3b0"
       (reference "J47") (unit 1) (value "Conn_01x01") (footprint "MeineBib:Protopin")
-    )
-    (path "/f7a1fee7-d81c-4e02-8116-b09f7e2d95c2"
-      (reference "J?") (unit 1) (value "Conn_01x01") (footprint "MeineBib:Protopin")
     )
   )
 )
