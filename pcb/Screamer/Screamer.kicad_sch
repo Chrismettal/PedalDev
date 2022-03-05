@@ -1274,7 +1274,7 @@
     (uuid 06bd8af6-5f31-48d1-8dfe-e47bb2fbf937)
     (property "Reference" "D1" (id 0) (at 133.35 102.87 0))
     (property "Value" "1N4148W" (id 1) (at 133.35 105.41 0))
-    (property "Footprint" "Diode_SMD:D_SOD-123" (id 2) (at 133.35 103.505 0)
+    (property "Footprint" "MeineBib:D_SOD-123+THT" (id 2) (at 133.35 103.505 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (id 3) (at 133.35 107.95 0)
@@ -1437,7 +1437,7 @@
     (uuid 2b9560aa-ca85-40bd-96c0-e06c0c8c5ac1)
     (property "Reference" "D3" (id 0) (at 143.51 81.28 0))
     (property "Value" "1N4148W" (id 1) (at 143.51 83.82 0))
-    (property "Footprint" "Diode_SMD:D_SOD-123" (id 2) (at 143.51 90.805 0)
+    (property "Footprint" "MeineBib:D_SOD-123+THT" (id 2) (at 143.51 90.805 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (id 3) (at 143.51 86.36 0)
@@ -1791,7 +1791,7 @@
     (uuid 8885a9d9-16dd-4476-9879-de777ac2f14c)
     (property "Reference" "D2" (id 0) (at 123.19 87.63 0))
     (property "Value" "1N4148W" (id 1) (at 123.19 90.17 0))
-    (property "Footprint" "Diode_SMD:D_SOD-123" (id 2) (at 123.19 97.155 0)
+    (property "Footprint" "MeineBib:D_SOD-123+THT" (id 2) (at 123.19 97.155 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (id 3) (at 123.19 92.71 0)
@@ -2339,13 +2339,13 @@
       (reference "C8") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/06bd8af6-5f31-48d1-8dfe-e47bb2fbf937"
-      (reference "D1") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
+      (reference "D1") (unit 1) (value "1N4148W") (footprint "MeineBib:D_SOD-123+THT")
     )
     (path "/8885a9d9-16dd-4476-9879-de777ac2f14c"
-      (reference "D2") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
+      (reference "D2") (unit 1) (value "1N4148W") (footprint "MeineBib:D_SOD-123+THT")
     )
     (path "/2b9560aa-ca85-40bd-96c0-e06c0c8c5ac1"
-      (reference "D3") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
+      (reference "D3") (unit 1) (value "1N4148W") (footprint "MeineBib:D_SOD-123+THT")
     )
     (path "/43624bd7-5b28-4455-bedf-a59e39f0128d"
       (reference "J1") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
