@@ -8,10 +8,7 @@ All the parts are or will be stocked at Tindie!
 
 <a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
 
-If you like my work please consider supporting my caffeine addiction!
-
-<a href='https://ko-fi.com/U7U6G0X3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
+**If you like my work please consider [supporting my caffeine addiction](https://gitlab.com/Chrismettal#donations)!**
 
 ## Table of contents <!-- omit in toc -->
 
@@ -19,6 +16,7 @@ If you like my work please consider supporting my caffeine addiction!
 - [Parts](#parts)
 - [Lower PCB](#lower-pcb)
 - [Sources](#sources)
+- [Donations](#donations)
 - [License](#license)
 
 
@@ -49,6 +47,11 @@ The following 3D models were used for the simulation renders in KiCAD and FreeCA
 | 9mm potentiometers  | https://grabcad.com/library/alpha-rd901f-40-15r1-1      |
 | DC barrel jack      | https://grabcad.com/library/5-5mm-panel-mount-dc-jack-1 |
 | LED 5mm             | https://grabcad.com/library/led-5mm-1#!                 |
+
+
+## Donations
+
+If you like my work please consider [supporting my caffeine addiction](https://gitlab.com/Chrismettal#donations)!
 
 
 ## License
