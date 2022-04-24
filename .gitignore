@@ -28,9 +28,9 @@ fp-info-cache
 *.dsn
 *.ses
 
-# Exported BOM files
-pcb/*.xml
-pcb/*.csv
+# Exported BOM files in the wrong folder
+pcb/*/*.xml
+pcb/*/*.csv
 
 # FreeCAD backup files
 *.FCBak
