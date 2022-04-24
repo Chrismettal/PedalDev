@@ -15,8 +15,14 @@ All the parts are or will be stocked at Tindie!
 ## Table of contents <!-- omit in toc -->
 
 - [Concept](#concept)
-- [Parts](#parts)
-- [Lower PCB](#lower-pcb)
+- [Common PCBs](#common-pcbs)
+  - [Lower](#lower)
+  - [Lower Buffered](#lower-buffered)
+  - [Proto Simple](#proto-simple)
+  - [Proto Groundplane](#proto-groundplane)
+  - [Proto Advanced SMD](#proto-advanced-smd)
+- [Specific PCBs](#specific-pcbs)
+  - [404 (Tubescreamer)](#404-tubescreamer)
 - [Sources](#sources)
 - [Donations](#donations)
 - [License](#license)
@@ -27,19 +33,36 @@ All the parts are or will be stocked at Tindie!
 Testo
 
 
-## Parts
-
-Ultra
+## Common PCBs
 
 
-## Lower PCB
+### Lower
 
-I guess
+
+### Lower Buffered
+
+
+### Proto Simple
+
+
+### Proto Groundplane
+
+
+### Proto Advanced SMD
+
+
+## Specific PCBs
+
+
+### 404 (Tubescreamer)
 
 
 ## Sources
 
-The following 3D models were used for the simulation renders in KiCAD and FreeCAD:
+The following 3D models were used for the simulation renders in KiCAD and FreeCAD. Please check their respective licenses if you intend to reuse them.
+
+Any models that are **not** mentioned here were created by me for this project and are subject to the same [license](#license) as the whole repo.
+
 
 | File                | Link                                                    |
 | ------------------- | ------------------------------------------------------- |
