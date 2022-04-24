@@ -1760,7 +1760,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 48.26 29.21 0) (mirror x) (unit 1)
-    (in_bom no) (on_board yes)
+    (in_bom yes) (on_board yes)
     (uuid 43624bd7-5b28-4455-bedf-a59e39f0128d)
     (property "Reference" "J1" (id 0) (at 51.435 29.2101 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1960,7 +1960,7 @@
   )
 
   (symbol (lib_id "Jumper:SolderJumper_3_Open") (at 133.35 92.71 270) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 813ef21e-74e3-4161-8789-36ea572d843c)
     (property "Reference" "JP2" (id 0) (at 135.89 91.4399 90)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2351,7 +2351,7 @@
   )
 
   (symbol (lib_id "Jumper:SolderJumper_3_Open") (at 88.9 62.23 90) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid e4c35e7a-8325-4107-989f-e5c50be3b59e)
     (property "Reference" "JP1" (id 0) (at 86.36 60.9599 90)
       (effects (font (size 1.27 1.27)) (justify left))

@@ -346,7 +346,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Screamer.kicad_pro",
+    "filename": "404.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -430,7 +430,7 @@
     ]
   ],
   "text_variables": {
-    "Commit": "Commit",
+    "Commit": "87d2bbb",
     "Link": "gitlab.com/Chrismettal/pedaldev",
     "Name": "404"
   }
