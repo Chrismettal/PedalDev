@@ -6866,7 +6866,7 @@
 
   (footprint "MeineBib:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" (layer "B.Cu")
     (tedit 5C6C6C14) (tstamp e630297e-b549-442e-9cb0-56c4e5315cd2)
-    (at 131.72 69.765 -90)
+    (at 131.8 69.765 -90)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (property "Sheetfile" "UpperRaw.kicad_sch")
