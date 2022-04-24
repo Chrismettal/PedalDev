@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -430,8 +430,8 @@
     ]
   ],
   "text_variables": {
-    "Commit": "6bf28cd",
+    "Commit": "-",
     "Link": "gitlab.com/Chrismettal/pedaldev",
-    "Name": "Proto - Adv."
+    "Name": "Proto-Adv. Gnd"
   }
 }
