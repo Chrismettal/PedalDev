@@ -86,11 +86,11 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../../_gitignored/Gerbers/Proto-simple/")
+      (outputdirectory "production_files/")
     )
   )
 
-  (property "Commit" "-")
+  (property "Commit" "0a46516")
   (property "Link" "gitlab.com/Chrismettal/pedaldev")
   (property "Name" "Proto - Simple")
 
