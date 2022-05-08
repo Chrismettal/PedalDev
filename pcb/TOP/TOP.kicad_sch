@@ -3121,9 +3121,9 @@
   (symbol (lib_id "Connector:TestPoint") (at 144.78 133.35 0) (unit 1)
     (in_bom no) (on_board yes)
     (uuid 37560992-9546-4c8f-93e1-57569b92ef2d)
-    (property "Reference" "TP_14V_B1" (id 0) (at 144.78 125.095 0))
-    (property "Value" "TP" (id 1) (at 144.78 127.635 0))
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 149.86 133.35 0)
+    (property "Reference" "14V_B1" (id 0) (at 144.78 125.095 0))
+    (property "Value" "" (id 1) (at 144.78 127.635 0))
+    (property "Footprint" "" (id 2) (at 149.86 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 149.86 133.35 0)
@@ -4549,7 +4549,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 295.91 95.25 0) (unit 1)
     (in_bom no) (on_board yes)
     (uuid d6aac683-cd09-4e3e-b361-1c9a3df2bf43)
-    (property "Reference" "TP_16V_B1" (id 0) (at 295.91 86.995 0))
+    (property "Reference" "16V_B1" (id 0) (at 295.91 86.995 0))
     (property "Value" "TP" (id 1) (at 295.91 89.535 0))
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 300.99 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -5096,8 +5096,14 @@
     (path "/15e53760-e6cc-4766-90d7-d2bd2dacdde4"
       (reference "14V1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
+    (path "/37560992-9546-4c8f-93e1-57569b92ef2d"
+      (reference "14V_B1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
     (path "/bdab8a5b-8453-40e4-91f3-6b0116606b87"
       (reference "16V1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
+    (path "/d6aac683-cd09-4e3e-b361-1c9a3df2bf43"
+      (reference "16V_B1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/33611798-ff99-4fbf-8304-671ca4cd15e2"
       (reference "C1") (unit 1) (value "10uF") (footprint "Capacitor_SMD:CP_Elec_4x5.4")
@@ -5338,12 +5344,6 @@
     )
     (path "/f1c1128a-9400-4ff3-9279-edba87833f0a"
       (reference "RV6") (unit 1) (value "25k Lin") (footprint "MeineBib:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical")
-    )
-    (path "/37560992-9546-4c8f-93e1-57569b92ef2d"
-      (reference "TP_14V_B1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
-    (path "/d6aac683-cd09-4e3e-b361-1c9a3df2bf43"
-      (reference "TP_16V_B1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/b98d586a-f5ba-4430-8cee-d883948cc317"
       (reference "U1") (unit 1) (value "ICL7660") (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm")
