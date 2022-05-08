@@ -1324,9 +1324,6 @@
   (junction (at 104.14 158.75) (diameter 0) (color 0 0 0 0)
     (uuid 17a03118-d997-43f6-b289-39c18bae94f2)
   )
-  (junction (at 233.68 176.53) (diameter 0) (color 0 0 0 0)
-    (uuid 1c291688-0175-4cba-9fc4-95af45c1badc)
-  )
   (junction (at 69.85 121.92) (diameter 0) (color 0 0 0 0)
     (uuid 1f89b750-6ac7-4352-a9ce-2b1f49fd43ba)
   )
@@ -1670,7 +1667,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 2ffc93a9-7e9e-427f-a83d-9ebe4fd0f6b3)
   )
-  (wire (pts (xy 232.41 176.53) (xy 233.68 176.53))
+  (wire (pts (xy 232.41 176.53) (xy 234.95 176.53))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 30bd21ea-131c-47fd-a0c7-759b42a62602)
   )
@@ -2149,10 +2146,6 @@
   (wire (pts (xy 318.77 123.19) (xy 316.23 123.19))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid abfd626c-d4b2-4f25-b82d-9523d5ae0caa)
-  )
-  (wire (pts (xy 233.68 176.53) (xy 234.95 176.53))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ac2d6203-f526-435c-8734-be73deed184e)
   )
   (wire (pts (xy 80.01 146.05) (xy 80.01 152.4))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2768,7 +2761,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 182.88 133.35 90) (unit 1)
     (in_bom no) (on_board yes)
     (uuid 10a748d1-06c5-4cb4-b4a0-a12855cde56a)
-    (property "Reference" "TP_GND1" (id 0) (at 177.165 135.255 90))
+    (property "Reference" "GND1" (id 0) (at 177.165 135.255 90))
     (property "Value" "TP" (id 1) (at 177.165 133.35 90))
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 182.88 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2801,7 +2794,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 241.3 105.41 90) (unit 1)
     (in_bom no) (on_board yes)
     (uuid 15e53760-e6cc-4766-90d7-d2bd2dacdde4)
-    (property "Reference" "TP_14V1" (id 0) (at 236.22 103.505 90))
+    (property "Reference" "14V1" (id 0) (at 236.22 103.505 90))
     (property "Value" "TP" (id 1) (at 235.585 105.41 90))
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 241.3 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2818,7 +2811,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 208.28 105.41 270) (unit 1)
     (in_bom no) (on_board yes)
     (uuid 16343701-80cb-4ddd-be03-e72f0ff5bc43)
-    (property "Reference" "TP_9V1" (id 0) (at 213.995 103.505 90))
+    (property "Reference" "9V1" (id 0) (at 213.995 103.505 90))
     (property "Value" "TP" (id 1) (at 213.995 105.41 90))
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 208.28 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3211,9 +3204,9 @@
   (symbol (lib_id "Connector:TestPoint") (at 80.01 146.05 90) (unit 1)
     (in_bom no) (on_board yes)
     (uuid 3c238384-4bc3-4bea-a049-2a9f264ce82f)
-    (property "Reference" "TP_Inp1" (id 0) (at 74.295 147.955 90))
-    (property "Value" "TP" (id 1) (at 74.295 146.05 90))
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 80.01 140.97 0)
+    (property "Reference" "Inp1" (id 0) (at 74.295 147.955 90))
+    (property "Value" "" (id 1) (at 74.295 146.05 90))
+    (property "Footprint" "" (id 2) (at 80.01 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 80.01 140.97 0)
@@ -3264,7 +3257,7 @@
   (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 195.58 128.27 90) (mirror x) (unit 1)
     (in_bom no) (on_board yes)
     (uuid 3e425e3f-14fb-4fd6-bdf2-17f58f37086a)
-    (property "Reference" "JP_VOut_GND1" (id 0) (at 204.47 128.27 90))
+    (property "Reference" "VOut-GND1" (id 0) (at 203.2 128.27 90))
     (property "Value" "Jmp" (id 1) (at 200.66 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4318,7 +4311,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 220.98 105.41 270) (unit 1)
     (in_bom no) (on_board yes)
     (uuid bdab8a5b-8453-40e4-91f3-6b0116606b87)
-    (property "Reference" "TP_16V1" (id 0) (at 226.695 103.505 90))
+    (property "Reference" "16V1" (id 0) (at 226.695 103.505 90))
     (property "Value" "TP" (id 1) (at 226.695 105.41 90))
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 220.98 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -4387,7 +4380,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 208.28 116.84 180) (unit 1)
     (in_bom no) (on_board yes)
     (uuid c20e6752-1d60-4673-993d-33ac47083931)
-    (property "Reference" "TP_DD1" (id 0) (at 208.28 121.92 0))
+    (property "Reference" "DD1" (id 0) (at 208.28 121.92 0))
     (property "Value" "TP" (id 1) (at 208.28 124.46 0))
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 203.2 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -4533,23 +4526,6 @@
     )
     (pin "1" (uuid a5344bc3-c49a-4d78-a384-45910a58eacd))
     (pin "2" (uuid 7bd11a41-f1f6-4663-a786-7ffabcdea6f8))
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 233.68 176.53 180) (unit 1)
-    (in_bom no) (on_board yes)
-    (uuid d40396dd-d7af-4c1e-8689-7a4af0c4044d)
-    (property "Reference" "TP_Gain1" (id 0) (at 233.68 184.785 0))
-    (property "Value" "TP" (id 1) (at 233.68 182.245 0))
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 228.6 176.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 228.6 176.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "~" (id 4) (at 233.68 176.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d2248fe1-17af-4a49-808c-512c95d0f0c2))
   )
 
   (symbol (lib_id "Device:C") (at 213.36 184.15 0) (unit 1)
@@ -5114,6 +5090,15 @@
     (path "/1b6bf0df-b38a-4aac-bedb-82327f657881"
       (reference "#PWR0125") (unit 1) (value "+9V") (footprint "")
     )
+    (path "/16343701-80cb-4ddd-be03-e72f0ff5bc43"
+      (reference "9V1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
+    (path "/15e53760-e6cc-4766-90d7-d2bd2dacdde4"
+      (reference "14V1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
+    (path "/bdab8a5b-8453-40e4-91f3-6b0116606b87"
+      (reference "16V1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
     (path "/33611798-ff99-4fbf-8304-671ca4cd15e2"
       (reference "C1") (unit 1) (value "10uF") (footprint "Capacitor_SMD:CP_Elec_4x5.4")
     )
@@ -5210,11 +5195,17 @@
     (path "/8c76c2ca-e1b1-4658-9c66-20c6d26e78b8"
       (reference "D2") (unit 1) (value "1N4004") (footprint "Diode_SMD:D_SMA")
     )
+    (path "/c20e6752-1d60-4673-993d-33ac47083931"
+      (reference "DD1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
+    (path "/10a748d1-06c5-4cb4-b4a0-a12855cde56a"
+      (reference "GND1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
+    (path "/3c238384-4bc3-4bea-a049-2a9f264ce82f"
+      (reference "Inp1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
     (path "/43624bd7-5b28-4455-bedf-a59e39f0128d"
       (reference "J1") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
-    )
-    (path "/3e425e3f-14fb-4fd6-bdf2-17f58f37086a"
-      (reference "JP_VOut_GND1") (unit 1) (value "Jmp") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
     )
     (path "/b177607c-996f-4968-ab2d-792a31128235"
       (reference "Q1") (unit 1) (value "BF545A") (footprint "Package_TO_SOT_SMD:SOT-23")
@@ -5348,32 +5339,11 @@
     (path "/f1c1128a-9400-4ff3-9279-edba87833f0a"
       (reference "RV6") (unit 1) (value "25k Lin") (footprint "MeineBib:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical")
     )
-    (path "/16343701-80cb-4ddd-be03-e72f0ff5bc43"
-      (reference "TP_9V1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
-    (path "/15e53760-e6cc-4766-90d7-d2bd2dacdde4"
-      (reference "TP_14V1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
     (path "/37560992-9546-4c8f-93e1-57569b92ef2d"
       (reference "TP_14V_B1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
-    (path "/bdab8a5b-8453-40e4-91f3-6b0116606b87"
-      (reference "TP_16V1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
     (path "/d6aac683-cd09-4e3e-b361-1c9a3df2bf43"
       (reference "TP_16V_B1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
-    (path "/c20e6752-1d60-4673-993d-33ac47083931"
-      (reference "TP_DD1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
-    (path "/10a748d1-06c5-4cb4-b4a0-a12855cde56a"
-      (reference "TP_GND1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
-    (path "/d40396dd-d7af-4c1e-8689-7a4af0c4044d"
-      (reference "TP_Gain1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
-    )
-    (path "/3c238384-4bc3-4bea-a049-2a9f264ce82f"
-      (reference "TP_Inp1") (unit 1) (value "TP") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/b98d586a-f5ba-4430-8cee-d883948cc317"
       (reference "U1") (unit 1) (value "ICL7660") (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm")
@@ -5404,6 +5374,9 @@
     )
     (path "/b35b9bf8-d0d3-480c-8956-d41f7e1e55ec"
       (reference "U4") (unit 3) (value "OPA2604") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+    )
+    (path "/3e425e3f-14fb-4fd6-bdf2-17f58f37086a"
+      (reference "VOut-GND1") (unit 1) (value "Jmp") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
     )
   )
 )
