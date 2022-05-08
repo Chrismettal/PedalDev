@@ -346,7 +346,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "UpperRaw.kicad_pro",
+    "filename": "TOP.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -432,6 +432,6 @@
   "text_variables": {
     "Commit": "Commit",
     "Link": "gitlab.com/Chrismettal/pedaldev",
-    "Name": "Template"
+    "Name": "TOP"
   }
 }
