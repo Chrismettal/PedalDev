@@ -111,6 +111,7 @@ As the system tries to use the little space in the 1590B as efficient as possibl
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
+The whole system is designed so the PCBs can be ordered from JLCPCB mostly populated, so only very little hand soldering is involved. If you order the boards finished you will mostly have to solder only the through hole components, but for some rare components that JLCPCB doesn't populate, it might be neccessary to solder some SMD components manually. SMD components go down to `0603` for passives, and `SOIC-*` / `SOT-*` for actives, which is still hand solderable without too much trouble.
 
 ## Sources
 
