@@ -28,6 +28,7 @@ Individual boards as well as some kits will be stocked at Tindie!
   - [Lower Buffered](#lower-buffered)
 - [Specific Designs](#specific-designs)
   - [404 (Tubescreamer)](#404-tubescreamer)
+  - [TOP (Dominator)](#top-dominator)
 - [Protoboards](#protoboards)
   - [Proto Simple](#proto-simple)
   - [Proto Groundplane](#proto-groundplane)
@@ -71,6 +72,13 @@ This variant of the lower PCB features mostly the same stuff as the regular one,
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
 First version of design finished. PCBs being ordered.
+
+
+### TOP (Dominator)
+
+:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
+
+Based on schematic by Saruman [here](https://www.freestompboxes.org/viewtopic.php?t=12031&hilit=c6)
 
 
 ## Protoboards
