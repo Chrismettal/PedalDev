@@ -90,7 +90,7 @@
     )
   )
 
-  (property "Commit" "-")
+  (property "Commit" "f35813b")
   (property "Link" "gitlab.com/Chrismettal/pedaldev")
   (property "Name" "Proto - Simple")
 
