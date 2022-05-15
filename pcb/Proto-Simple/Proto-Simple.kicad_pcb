@@ -7589,7 +7589,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnob.step"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnobPointy16mm.step"
       (offset (xyz 7.5 -2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -7993,10 +7993,10 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnob.step"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnobPointy16mm.step"
       (offset (xyz 7.5 -2.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 -90))
     )
   )
 
@@ -8071,10 +8071,10 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnob.step"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnobPointy16mm.step"
       (offset (xyz 7.5 -2.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 -90))
     )
   )
 
@@ -8120,7 +8120,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnob.step"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnobPointy16mm.step"
       (offset (xyz 7.5 -2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -8169,7 +8169,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
-    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnob.step"
+    (model "${MEINE_BIBS}/MeineBib.3dshapes/PotKnobPointy16mm.step"
       (offset (xyz 7.5 -2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
