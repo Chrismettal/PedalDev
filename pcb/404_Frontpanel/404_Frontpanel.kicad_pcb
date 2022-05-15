@@ -66,9 +66,9 @@
       (svgprecision 6)
       (excludeedgelayer true)
       (plotframeref false)
-      (viasonmask false)
+      (viasonmask true)
       (mode 1)
-      (useauxorigin true)
+      (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
       (hpglpendiameter 15.000000)
@@ -689,7 +689,7 @@
 
   (footprint "MeineBib:PentThin" (layer "B.Cu")
     (tedit 60201403) (tstamp d9c28531-d40c-43f5-9be4-5e22403d417d)
-    (at 149.450706 72.767826 180)
+    (at 149.450706 78.635826 180)
     (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "MK6" (at 0 0) (layer "B.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
