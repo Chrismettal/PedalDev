@@ -86,11 +86,11 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "production_files/grb/")
+      (outputdirectory "production_files/")
     )
   )
 
-  (property "Commit" "Commit")
+  (property "Commit" "f35813b")
   (property "Link" "gitlab.com/Chrismettal/pedaldev")
   (property "Name" "404")
   (property "RV1" "Drive")
