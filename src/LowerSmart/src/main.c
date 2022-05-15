@@ -10,7 +10,7 @@
  * PB2 - Dry FETs
  * PB3 - Wet FETs
  * 
- * PB4 - Button Input
+ * PB4 - Button Input - active LOW
  */
 
 
@@ -33,7 +33,10 @@
 volatile unsigned long currentTime_ms   = 0;
 const unsigned long holdToSwitchMode_ms = 5000;
 const unsigned long blinkDuration_ms    = 100;
+const unsigned long debounceDuration_ms = 100;
+unsigned long lastDebounceTime_ms       = 0;
 unsigned long lastButtonDownTime_ms     = 0;
+
 
 
 // Modes
@@ -54,9 +57,11 @@ struct {
 
 // Inputs
 struct {
+  unsigned debounceInput_Button:1;
+  unsigned lastDebounceInput_Button:1;
   unsigned state_Button:1;
   unsigned ftrig_Button:1;
-  unsigned sLast_Button:1;
+  unsigned Last_Button:1;
 } input;
 
 
@@ -80,7 +85,7 @@ void setOutputs();
 /*******************************************************************************************/
 ISR(TIM0_COMPA_vect)
 {
-    currentTime_ms++;
+  currentTime_ms++;
 }
 
 
@@ -88,7 +93,7 @@ ISR(TIM0_COMPA_vect)
 /*****************************             main                    *************************/
 /*******************************************************************************************/
 int main(){
-  
+
   init();
 
   while(1){
@@ -119,7 +124,7 @@ int main(){
       flags.modeSwitchImminent  = 0;
     } else {
       // While button is pressed, wait for time elapsed
-      if ((currentTime_ms - lastButtonDownTime_ms >= holdToSwitchMode_ms) && !flags.modeSwitchDone) {
+      if (((currentTime_ms - lastButtonDownTime_ms) >= holdToSwitchMode_ms) && !flags.modeSwitchDone) {
         // Switch mode if time elapsed
         if (mode == mode_momentary) {
           mode = mode_toggle;
@@ -146,7 +151,7 @@ int main(){
     setOutputs();
 
   }//end while(1)
-    
+
 }//end main()
 
 
@@ -177,7 +182,6 @@ void init() {
 
 
   // Read in EEPROM into mode
-  // TODO
   mode = eeprom_read_byte(adr_mode);
 }
 
@@ -186,10 +190,19 @@ void init() {
 /*****************************         readInputs                  *************************/
 /*******************************************************************************************/
 void readInputs() {
-  // Read and evaluate edge on button
-  input.state_Button = PORTB & BUTTON;
-  input.ftrig_Button = !input.state_Button && input.sLast_Button;
-  input.sLast_Button =  input.state_Button;
+  // Read in button
+  input.debounceInput_Button = PORTB & BUTTON;
+
+  // Debounce button
+  if (input.debounceInput_Button != input.lastDebounceInput_Button) {
+    lastButtonDownTime_ms = currentTime_ms;
+  } else if (currentTime_ms - lastButtonDownTime_ms >= debounceDuration_ms) {
+    input.state_Button    = input.debounceInput_Button;
+  }
+
+  // Evaluate edge on button
+  input.ftrig_Button  = !input.state_Button && input.Last_Button;
+  input.Last_Button   =  input.state_Button;
 }
 
 
@@ -207,7 +220,8 @@ void setOutputs() {
                                 (mode == mode_toggle      && flags.modeSwitchBlinker);
 
 
-  //Write outputs to port, inverted because of low side switching
+  //Write outputs to port
+  //LEDs inverted outputs
   if (output.State_LED_Toggle) {
     PORTB &= ~(1 << LED_TOGGLE);
   } else {
@@ -220,16 +234,17 @@ void setOutputs() {
     PORTB |=  (1 << LED_MOMENTARY);
   }
   
+  // FETs non-inverted outputs
   if (output.State_FET_Dry) {
-    PORTB &= ~(1 << FET_DRY);
-  } else {
     PORTB |=  (1 << FET_DRY);
+  } else {
+    PORTB &= ~(1 << FET_DRY);
   }
 
   if (output.State_FET_Wet) {
-    PORTB &= ~(1 << FET_WET);
-  } else {
     PORTB |=  (1 << FET_WET);
+  } else {
+    PORTB &= ~(1 << FET_WET);
   }
 
 }
