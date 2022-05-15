@@ -1,6 +1,5 @@
 /*
  * TODO:
- * - EEPROM read/write
  * - Button debouncing
  *
  * BufferLowerSmart
@@ -39,8 +38,10 @@ unsigned long lastButtonDownTime_ms     = 0;
 
 // Modes
 uint8_t mode                            = 0;
+#define adr_mode                          0
 #define mode_toggle                       0
 #define mode_momentary                    1
+
 
 // Flags
 struct {
@@ -125,6 +126,10 @@ int main(){
         } else if (mode == mode_toggle) {
           mode = mode_momentary;
         }
+
+        // Write mode into EEPROM
+        eeprom_write_byte(adr_mode, mode);
+
         // Prevent cyclic toggling of mode as long as button is held
         flags.modeSwitchDone = 1;
       }
@@ -173,7 +178,7 @@ void init() {
 
   // Read in EEPROM into mode
   // TODO
-  mode = eeprom_read_byte(0)
+  mode = eeprom_read_byte(adr_mode);
 }
 
 
