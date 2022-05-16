@@ -26,9 +26,10 @@ Individual boards as well as some kits will be stocked at Tindie!
 - [Common PCBs](#common-pcbs)
   - [Lower](#lower)
   - [Lower Buffered](#lower-buffered)
+  - [Lower Smart](#lower-smart)
 - [Specific Designs](#specific-designs)
-  - [404 (Tubescreamer)](#404-tubescreamer)
-  - [TOP (Dominator)](#top-dominator)
+  - [404 (:sheep: Ibanez Tubescreamer)](#404-sheep-ibanez-tubescreamer)
+  - [TOP (:sheep: OKKO Dominator)](#top-sheep-okko-dominator)
 - [Protoboards](#protoboards)
   - [Proto Simple](#proto-simple)
   - [Proto Groundplane](#proto-groundplane)
@@ -65,16 +66,28 @@ Test hooks and pads are sprinkled on interesting signals for effect development 
 This variant of the lower PCB features mostly the same stuff as the regular one, but instead of true bypass it uses a fully buffered flip-flop bypass that can be set latching or momentary with jumpers. In latching mode it will work like any other Boss like effect, toggling the effect on or off on button press. In momentary mode the effect will only be active as long as the button is held down.
 
 
+### Lower Smart
+
+:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
+
+Same as Lower Buffered, but instead of a flip-flop that's configured via solder jumpers, it features a microcontroller to swap between toggle and momentary mode without opening the device. To show the mode it's currently on, it uses a bicolor LED.
+
+On initial bootup, the device will be in toggle mode. Pressing the button will toggle the effect on and off. The :construction: colored LED will be on as long as the effect is on in toggle mode. 
+Holding the button down for 9 seconds, both LEDs will start blinking, signaling that a mode change is imminent. Holding the button for one more second, the device will switch into momentary mode.
+In momentary mode, the effect will only be on while the button is held. While the effect is on, a :construction: colored LED will be on in momentary mode.
+Switching back to toggle mode works the same way, by holding down the button long enough.
+
+
 ## Specific Designs
 
-### 404 (Tubescreamer)
+### 404 (:sheep: Ibanez Tubescreamer)
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
 First version of design finished. PCBs being ordered.
 
 
-### TOP (Dominator)
+### TOP (:sheep: OKKO Dominator)
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 

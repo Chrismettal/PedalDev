@@ -31,7 +31,7 @@
 
 // Times
 volatile unsigned long currentTime_ms   = 0;
-const unsigned long holdToSwitchMode_ms = 5000;
+const unsigned long holdToSwitchMode_ms = 9000;
 const unsigned long blinkDuration_ms    = 100;
 const unsigned long debounceDuration_ms = 100;
 unsigned long lastDebounceTime_ms       = 0;
@@ -146,6 +146,7 @@ int main(){
 
     // Mode change blinky toggler
     flags.modeSwitchBlinker = (((currentTime_ms - lastButtonDownTime_ms) % 250) <= 125) && flags.modeSwitchImminent;
+
 
     // Evaluate Outputs
     setOutputs();
