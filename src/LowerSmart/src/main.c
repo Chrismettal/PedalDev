@@ -4,7 +4,7 @@
  *
  * BufferLowerSmart
  * 
- * PB0 - LED toggle PWM
+ * PB0 - LED latching PWM
  * PB1 - LED momentary PWM
  * 
  * PB2 - Dry FETs
@@ -22,7 +22,7 @@
 
 
 // Pins
-#define LED_TOGGLE      0
+#define LED_LATCHING    0
 #define LED_MOMENTARY   1
 #define FET_DRY         2
 #define FET_WET         3
@@ -41,7 +41,7 @@ unsigned long lastButtonDownTime_ms     = 0;
 // Modes
 uint8_t mode                            = 0;
 #define adr_mode                          0
-#define mode_toggle                       0
+#define mode_latching                     0
 #define mode_momentary                    1
 
 
@@ -66,7 +66,7 @@ struct {
 
 // Outputs
 struct {
-  unsigned State_LED_Toggle:1;
+  unsigned State_LED_Latching:1;
   unsigned State_LED_Momentary:1;
   unsigned State_FET_Dry:1;
   unsigned State_FET_Wet:1;
@@ -103,8 +103,7 @@ int main(){
 
     // Switch between modes
     switch (mode) {
-      case mode_toggle:
-        if (input.ftrig_Button) {
+      case mode_latching        if (input.ftrig_Button) {
           flags.effectActive = !flags.effectActive;
         }
         break;
@@ -126,8 +125,7 @@ int main(){
       if (((currentTime_ms - lastButtonDownTime_ms) >= holdToSwitchMode_ms) && !flags.modeSwitchDone) {
         // Switch mode if time elapsed
         if (mode == mode_momentary) {
-          mode = mode_toggle;
-        } else if (mode == mode_toggle) {
+          mode = mode_latching        } else if (mode == mode_latching{
           mode = mode_momentary;
         }
 
@@ -216,18 +214,18 @@ void setOutputs() {
   output.State_FET_Wet        =  flags.effectActive;
   output.State_FET_Dry        = !flags.effectActive;
 
-  output.State_LED_Toggle     = (mode == mode_toggle      && flags.effectActive && !flags.modeSwitchBlinker) ||
+  output.State_LED_Latching     = (mode == mode_latching    && flags.effectActive && !flags.modeSwitchBlinker) ||
                                 (mode == mode_momentary   && flags.modeSwitchBlinker);
   output.State_LED_Momentary  = (mode == mode_momentary   && flags.effectActive && !flags.modeSwitchBlinker) ||
-                                (mode == mode_toggle      && flags.modeSwitchBlinker);
+                                (mode == mode_latching    && flags.modeSwitchBlinker);
 
 
   //Write outputs to port
   //LEDs inverted outputs
-  if (output.State_LED_Toggle) {
-    PORTB &= ~(1 << LED_TOGGLE);
+  if (output.State_LED_Latching) {
+    PORTB &= ~(1 << LED_LATCHING);
   } else {
-    PORTB |=  (1 << LED_TOGGLE);
+    PORTB |=  (1 << LED_LATCHING);
   }
   
   if (output.State_LED_Momentary) {
