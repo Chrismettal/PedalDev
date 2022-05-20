@@ -38,7 +38,6 @@ unsigned long lastDebounceTime_ms       = 0;
 unsigned long lastButtonDownTime_ms     = 0;
 
 
-
 // Modes
 uint8_t mode                            = 0;
 #define adr_mode                          0
@@ -194,12 +193,14 @@ void readInputs() {
   // Read in button
   input.debounceInput_Button = PORTB & BUTTON;
 
+
   // Debounce button
   if (input.debounceInput_Button != input.lastDebounceInput_Button) {
     lastButtonDownTime_ms = currentTime_ms;
   } else if (currentTime_ms - lastButtonDownTime_ms >= debounceDuration_ms) {
     input.state_Button    = input.debounceInput_Button;
   }
+
 
   // Evaluate edge on button
   input.ftrig_Button  = !input.state_Button && input.Last_Button;
