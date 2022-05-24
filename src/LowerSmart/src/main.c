@@ -103,7 +103,8 @@ int main(){
 
     // Switch between modes
     switch (mode) {
-      case mode_latching        if (input.ftrig_Button) {
+      case mode_latching:
+          if (input.ftrig_Button) {
           flags.effectActive = !flags.effectActive;
         }
         break;
@@ -125,7 +126,8 @@ int main(){
       if (((currentTime_ms - lastButtonDownTime_ms) >= holdToSwitchMode_ms) && !flags.modeSwitchDone) {
         // Switch mode if time elapsed
         if (mode == mode_momentary) {
-          mode = mode_latching        } else if (mode == mode_latching{
+          mode = mode_latching;
+        } else if (mode == mode_latching) {
           mode = mode_momentary;
         }
 
