@@ -216,7 +216,7 @@ void setOutputs() {
   output.State_FET_Wet        =  flags.effectActive;
   output.State_FET_Dry        = !flags.effectActive;
 
-  output.State_LED_Latching     = (mode == mode_latching    && flags.effectActive && !flags.modeSwitchBlinker) ||
+  output.State_LED_Latching   = (mode == mode_latching    && flags.effectActive && !flags.modeSwitchBlinker) ||
                                 (mode == mode_momentary   && flags.modeSwitchBlinker);
   output.State_LED_Momentary  = (mode == mode_momentary   && flags.effectActive && !flags.modeSwitchBlinker) ||
                                 (mode == mode_latching    && flags.modeSwitchBlinker);
