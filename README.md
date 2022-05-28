@@ -131,12 +131,12 @@ If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.co
 ![DrillGuide](/img/Guide/DrillGuide.png)
 
 
-2. Pre-drill all marked holes with a `2.5mm drill bit` (The smallest size used on the device)
+2. Pre-drill all marked holes with a `3mm drill bit` (The smallest size used on the device)
 
 ![PreDrill](/img/Guide/PreDrill.png)
 
 
-3. Drill out all the holes to the sizes marked on the drill guide.
+3. Drill out all the holes to the sizes marked on the drill guide. Note that the holes are all 0.5mm - 1mm larger than they need to be to make alignment of the frontpanel easier
 
 ![Drilled](/img/Guide/Drilled.png)
 
