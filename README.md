@@ -23,23 +23,40 @@ Individual boards as well as some kits will be stocked at Tindie!
 
 ## Table of contents <!-- omit in toc -->
 
-- [Common PCBs](#common-pcbs)
-  - [Lower](#lower)
-  - [Lower Buffered](#lower-buffered)
-  - [Lower Smart](#lower-smart)
 - [Specific Designs](#specific-designs)
   - [404 (:sheep: Ibanez Tubescreamer)](#404-sheep-ibanez-tubescreamer)
   - [TOP (:sheep: OKKO Dominator)](#top-sheep-okko-dominator)
+- [Common PCBs](#common-pcbs)
+  - [Lower](#lower)
+  - [Lower Smart](#lower-smart)
 - [Protoboards](#protoboards)
   - [Proto Simple](#proto-simple)
   - [Proto Groundplane](#proto-groundplane)
   - [Proto Advanced SMD](#proto-advanced-smd)
-- [Designing your own](#designing-your-own)
-- [Building manual](#building-manual)
+- [Designing your own effects](#designing-your-own-effects)
+- [Building guide](#building-guide)
+  - [Case](#case)
+  - [Electronics](#electronics)
 - [Sources](#sources)
 - [Tools](#tools)
 - [Donations](#donations)
 - [License](#license)
+
+
+## Specific Designs
+
+### 404 (:sheep: Ibanez Tubescreamer)
+
+:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
+
+First version of design finished. PCBs being ordered.
+
+
+### TOP (:sheep: OKKO Dominator)
+
+:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
+
+Based on schematic by Saruman [here](https://www.freestompboxes.org/viewtopic.php?t=12031&hilit=c6)
 
 
 ## Common PCBs
@@ -59,39 +76,16 @@ Test hooks and pads are sprinkled on interesting signals for effect development 
 > While this system is intended to be used with one lower PCB and one upper PCB fitting together, it might be convenient to just use the lower PCB even if you do not intend to use an actual effect from this system. Doing so greatly reduces the amount of free form wiring and frees up some space on your actual effect PCB.
 
 
-### Lower Buffered
-
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
-
-This variant of the lower PCB features mostly the same stuff as the regular one, but instead of true bypass it uses a fully buffered flip-flop bypass that can be set latching or momentary with jumpers. In latching mode it will work like any other Boss like effect, toggling the effect on or off on button press. In momentary mode the effect will only be active as long as the button is held down.
-
-
 ### Lower Smart
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
-Same as Lower Buffered, but instead of a flip-flop that's configured via solder jumpers, it features a microcontroller to swap between toggle and momentary mode without opening the device. To show the mode it's currently on, it uses a bicolor LED.
+Same as `Lower`, but instead of a true bypass 3PDT Switch it features a microcontroller to turn your effect on and off either in momentary or latching mode. To show the mode it's currently on, it uses a bicolor LED.
 
-On initial bootup, the device will be in toggle mode. Pressing the button will toggle the effect on and off. The :construction: colored LED will be on as long as the effect is on in toggle mode. 
+On initial bootup, the device will be in latching mode. Pressing the button will toggle the effect on and off. The :construction: colored LED will be on as long as the effect is on in toggle mode. 
 Holding the button down for 9 seconds, both LEDs will start blinking, signaling that a mode change is imminent. Holding the button for one more second, the device will switch into momentary mode.
 In momentary mode, the effect will only be on while the button is held. While the effect is on, a :construction: colored LED will be on in momentary mode.
 Switching back to toggle mode works the same way, by holding down the button long enough.
-
-
-## Specific Designs
-
-### 404 (:sheep: Ibanez Tubescreamer)
-
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
-
-First version of design finished. PCBs being ordered.
-
-
-### TOP (:sheep: OKKO Dominator)
-
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
-
-Based on schematic by Saruman [here](https://www.freestompboxes.org/viewtopic.php?t=12031&hilit=c6)
 
 
 ## Protoboards
@@ -111,20 +105,108 @@ Based on schematic by Saruman [here](https://www.freestompboxes.org/viewtopic.ph
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
 
-## Designing your own
+## Designing your own effects
 
 I would love to merge your designs using this system into this repo!
 
 To design your own effect PCB, create a copy of the `UpperRaw` KiCAD project for the actual effect, and optionally `FrontRaw` for a PCB frontpanel design. `UpperRaw` includes in the schematic a collection of frequently used parts, set up with LCSC part numbers etc. It would be great if you add LCSC part numbers to all parts used in your design, but it is not required. After merging I will recreate the production files to the same parameters as the already created designs so don't worry about that.
 
 
-## Building manual
+## Building guide
 
 As the system tries to use the little space in the 1590B as efficient as possible, the actual build can be quite tight. There is a set order of steps that should be taken to make the build as quick and easy as possible.
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
 The whole system is designed so the PCBs can be ordered from JLCPCB mostly populated, so only very little hand soldering is involved. If you order the boards finished you will mostly have to solder only the through hole components, but for some rare components that JLCPCB doesn't populate, it might be neccessary to solder some SMD components manually. SMD components go down to `0603` for passives, and `SOIC-*` / `SOT-*` for actives, which is still hand solderable without too much trouble.
+
+
+### Case
+
+If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.com/stores/binary-6/), there is a printable drill guide available. Otherwise, there will be a techdraw sheet with all the dimensions.
+
+
+1. Put the case in the drill guide and use a center punch to mark out all the holes to be drilled
+
+![DrillGuide](/img/Guide/DrillGuide.png)
+
+
+2. Pre-drill all marked holes with a `2.5mm drill bit` (The smallest size used on the device)
+
+![PreDrill](/img/Guide/PreDrill.png)
+
+
+3. Drill out all the holes to the sizes marked on the drill guide.
+
+![Drilled](/img/Guide/Drilled.png)
+
+
+4. If you want to paint the case, this would be the step to do it. I clean the case with rubbing alcohol, prime and paint, while only focusing on the sides of the case as I will hide the top underneath the frontpanels.
+
+![Painted](/img/Guide/Painted.png)
+
+
+### Electronics
+
+1. Some boards require several components to be mounted manually (Check their individual [documentation](#specific-designs)). These will include through hole parts or not easily available active parts for example. In this case, the OpAmp and input stage transistors, as well as connectors need to be placed manually. Note that the pots and switches are NOT placed at this stage!
+
+![TopAssembly](/img/Guide/TopAssembly.png)
+
+
+2. The lower PCB also requires some assembly, namely attaching the LED with its spacer and soldering on the board-to-board connector wire.
+
+![LowerAssembly](/img/Guide/LowerAssembly.png)
+
+
+3. On most boards you will also find some configuration jumpers to be set. These include for example the `Buffered - Unbuffered` jumpers for the [Lower](#lower) PCB. Note the individual boards [documentation](#specific-designs).
+
+![Jumpers](/img/Guide/Jumpers.png)
+
+
+4. Attach the spacers to all boards.
+
+![Spacers](/img/Guide/Spacers.png)
+
+
+5. Prepare the power jack by attaching two solid wires to the jack as shown.
+
+![PowerWire](/img/Guide/PowerWire.png)
+
+
+6. Mount all jacks, pots and switches to the case, optionally applying the FrontPanel. Do the input/output jacks first, as you will need to have some space to tilt the jacks while inserting them both into the case.
+
+![Mechanicals](/img/Guide/Mechanicals.png)
+
+
+7. Place the upper board on top of the controls. Might be a bit tricky to align all the holes, but it can be made a bit easier by loosening all the controls screws. While it is also possible to first solder on all the controls, slight misalignments in height will lead to mechanical stress on the board when screwing the controls down later. Soldering it after mounting will ensure a mechanically unstressed board and still allow unmounting the board later by unscrewing the controls.
+
+![PlacedOnControls](/img/Guide/PlacedOnControls.png)
+
+
+8. Screw down all controls tightly and solder all controls to the board.
+
+![Soldered](/img/Guide/Soldered.png)
+
+
+9. Place the lower board on top of the I/O
+
+![LowerPlaced](/img/Guide/LowerPlaced.png)
+
+
+10. Solder down the lower PCB. Note that this board will NOT be easily removeable without unsoldering the controls again!
+
+![LowerSoldered](/img/Guide/LowerSoldered.png)
+
+
+11. Plug in the board-to-board connector.
+
+![InsideDone](/img/Guide/InsideDone.png)
+
+
+12. All done! 
+
+![OutsideDone](/img/Guide/OutsideDone.png)
+
 
 ## Sources
 
@@ -145,7 +227,7 @@ Any models that are **not** mentioned here were created by me for this project a
 ## Tools
 
 - PCBs: [KiCAD Version 6.0.3](https://www.kicad.org/)
-- 3D CAD: [FreeCAD 0.20 Dev versions](https://www.freecadweb.org/) 
+- 3D CAD: [FreeCAD 0.20 nightly Dev versions](https://www.freecadweb.org/) 
 
 
 ## Donations
