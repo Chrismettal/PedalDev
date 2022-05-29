@@ -47,9 +47,11 @@ Individual boards as well as some kits will be stocked at Tindie!
 
 ### 404 (:sheep: Ibanez Tubescreamer)
 
+Based on the popular Tubescreamer this is obviously the first design to be done in this system.
+
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
-First version of design finished. PCBs being ordered.
+![404](/img/404/nice.png)
 
 
 ### TOP (:sheep: OKKO Dominator)
@@ -58,6 +60,9 @@ First version of design finished. PCBs being ordered.
 
 Based on schematic by Saruman [here](https://www.freestompboxes.org/viewtopic.php?t=12031&hilit=c6)
 
+First PCB version `f35813b` was broken is currently being debugged. 4 Pins on TL074 were swapped, 7660 does not work when `BOOST` mode is set, and apparently I got delivered fake BF545As, as the input stage sounds starved.
+
+:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
 ## Common PCBs
 
