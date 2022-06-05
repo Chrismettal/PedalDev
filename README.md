@@ -25,7 +25,7 @@ Individual boards as well as some kits will be stocked at Tindie!
 
 - [Specific Designs](#specific-designs)
   - [404 (:sheep: Ibanez Tubescreamer)](#404-sheep-ibanez-tubescreamer)
-  - [TOP (:sheep: OKKO Dominator)](#top-sheep-okko-dominator)
+  - [:construction: TOP (:sheep: OKKO Dominator)](#construction-top-sheep-okko-dominator)
 - [Common PCBs](#common-pcbs)
   - [Lower](#lower)
   - [Lower Smart](#lower-smart)
@@ -49,20 +49,16 @@ Individual boards as well as some kits will be stocked at Tindie!
 
 Based on the popular Tubescreamer this is obviously the first design to be done in this system.
 
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
-
 ![404](/img/404/nice.png)
 
 
-### TOP (:sheep: OKKO Dominator)
+### :construction: TOP (:sheep: OKKO Dominator)
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
-Based on schematic by Saruman [here](https://www.freestompboxes.org/viewtopic.php?t=12031&hilit=c6)
+Based on schematic by Saruman [here](https://www.freestompboxes.org/viewtopic.php?t=12031&hilit=c6).
 
-First PCB version `f35813b` was broken is currently being debugged. 4 Pins on TL074 were swapped, 7660 does not work when `BOOST` mode is set, and apparently I got delivered fake BF545As, as the input stage sounds starved.
-
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
+First PCB version `f35813b` was broken is currently being debugged. 4 Pins on TL074 were swapped, `ICL7660` does not work when `BOOST` mode is set (But **`ICL7660S`** does..), and input stage sounds super starved, more like a bass fuzz than a distortion. Simulation seems to confirm this so confidence in schematic is low. Currently ordering an original Dominator for schematic comparison.
 
 
 ## Common PCBs
@@ -156,7 +152,7 @@ If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.co
 
 1. Some boards require several components to be mounted manually (Check their individual [documentation](#specific-designs)). These will include through hole parts or not easily available active parts for example. In this case, the OpAmp and input stage transistors, as well as connectors need to be placed manually. Note that the pots and switches are NOT placed at this stage!
 
-![TopAssembly](/img/Guide/TopAssembly.png)
+![TopAssembly](/img/Guide/404Assembly.png)
 
 
 2. The lower PCB also requires some assembly, namely attaching the LED with its spacer and soldering on the board-to-board connector wire.
@@ -232,7 +228,7 @@ Any models that are **not** mentioned here were created by me for this project a
 
 ## Tools
 
-- PCBs: [KiCAD Version 6.0.3](https://www.kicad.org/)
+- PCBs: [KiCAD Version 6.0.5](https://www.kicad.org/)
 - 3D CAD: [FreeCAD 0.20 nightly Dev versions](https://www.freecadweb.org/) 
 
 
