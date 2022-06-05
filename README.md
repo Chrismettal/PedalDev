@@ -36,8 +36,8 @@ Individual boards as well as some kits will be stocked at Tindie!
   - [Proto Groundplane](#proto-groundplane)
   - [Proto Advanced SMD](#proto-advanced-smd)
 - [Designing your own effects](#designing-your-own-effects)
-- [Building guide](#building-guide)
-  - [Case](#case)
+- [:construction: Building guide](#construction-building-guide)
+  - [:construction: Case](#construction-case)
   - [Electronics](#electronics)
 - [Sources](#sources)
 - [Tools](#tools)
@@ -116,45 +116,43 @@ I would love to merge your designs using this system into this repo!
 To design your own effect PCB, create a copy of the `UpperRaw` KiCAD project for the actual effect, and optionally `FrontRaw` for a PCB frontpanel design. `UpperRaw` includes in the schematic a collection of frequently used parts, set up with LCSC part numbers etc. It would be great if you add LCSC part numbers to all parts used in your design, but it is not required. After merging I will recreate the production files to the same parameters as the already created designs so don't worry about that.
 
 
-## Building guide
+## :construction: Building guide
 
 As the system tries to use the little space in the 1590B as efficient as possible, the actual build can be quite tight. There is a set order of steps that should be taken to make the build as quick and easy as possible.
-
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
 The whole system is designed so the PCBs can be ordered from JLCPCB mostly populated, so only very little hand soldering is involved. If you order the boards finished you will mostly have to solder only the through hole components, but for some rare components that JLCPCB doesn't populate, it might be neccessary to solder some SMD components manually. SMD components go down to `0603` for passives, and `SOIC-*` / `SOT-*` for actives, which is still hand solderable without too much trouble.
 
 
-### Case
+### :construction: Case
 
 If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.com/stores/binary-6/), there is a printable drill guide available. Otherwise, there will be a techdraw sheet with all the dimensions.
 
 
 1. Put the case in the drill guide and use a center punch to mark out all the holes to be drilled
 
-![DrillGuide](/img/Guide/DrillGuide.png)
+:construction: ![DrillGuide](/img/Guide/DrillGuide.png)
 
 
 2. Pre-drill all marked holes with a `3mm drill bit` (The smallest size used on the device)
 
-![PreDrill](/img/Guide/PreDrill.png)
+:construction: ![PreDrill](/img/Guide/PreDrill.png)
 
 
 3. Drill out all the holes to the sizes marked on the drill guide. Note that the holes are all 0.5mm - 1mm larger than they need to be to make alignment of the frontpanel easier
 
-![Drilled](/img/Guide/Drilled.png)
+:construction: ![Drilled](/img/Guide/Drilled.png)
 
 
 4. If you want to paint the case, this would be the step to do it. I clean the case with rubbing alcohol, prime and paint, while only focusing on the sides of the case as I will hide the top underneath the frontpanels.
 
-![Painted](/img/Guide/Painted.png)
+:construction: ![Painted](/img/Guide/Painted.png)
 
 
 ### Electronics
 
 1. Some boards require several components to be mounted manually (Check their individual [documentation](#specific-designs)). These will include through hole parts or not easily available active parts for example. In this case, the OpAmp and input stage transistors, as well as connectors need to be placed manually. Note that the pots and switches are NOT placed at this stage!
 
-![TopAssembly](/img/Guide/404Assembly.png)
+![404Assembly](/img/Guide/404Assembly.png)
 
 
 2. The lower PCB also requires some assembly, namely attaching the LED with its spacer and soldering on the board-to-board connector wire.
