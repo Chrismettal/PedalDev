@@ -12,6 +12,8 @@ All designs build up from the same template to allow rapid creation of new desig
 
 For easy mechanical manufacturing a 3D printable drilling template is provided. There is also a 3D printable design of the full stompbox similar to the 1590B with all ports "predrilled". A plastic case is not super recommended though and should only be used for quick testing. Conductive spray paint as shielding on the inside is also recommended when using the 3D printed case.
 
+Parts marked with ":construction:" are work in progress and not fully verified yet.
+
 ---
 
 Individual boards as well as some kits will be stocked at Tindie!
@@ -28,7 +30,7 @@ Individual boards as well as some kits will be stocked at Tindie!
   - [:construction: TOP (:sheep: OKKO Dominator)](#construction-top-sheep-okko-dominator)
 - [Common PCBs](#common-pcbs)
   - [Lower](#lower)
-  - [Lower Smart](#lower-smart)
+  - [:construction: Lower Smart](#construction-lower-smart)
 - [Protoboards](#protoboards)
   - [Proto Simple](#proto-simple)
   - [Proto Groundplane](#proto-groundplane)
@@ -58,7 +60,7 @@ Based on the popular Tubescreamer this is obviously the first design to be done 
 
 Based on schematic by Saruman [here](https://www.freestompboxes.org/viewtopic.php?t=12031&hilit=c6).
 
-First PCB version `f35813b` was broken is currently being debugged. 4 Pins on TL074 were swapped, `ICL7660` does not work when `BOOST` mode is set (But **`ICL7660S`** does..), and input stage sounds super starved, more like a bass fuzz than a distortion. Simulation seems to confirm this so confidence in schematic is low. Currently ordering an original Dominator for schematic comparison.
+First PCB version `f35813b` was broken is currently being debugged. 4 Pins on `TL074` were swapped, `ICL7660` does not work when `BOOST` mode is set (But **`ICL7660S`** does..), and input stage sounds super starved, more like a bassy fuzz than a distortion. Simulation seems to confirm this so confidence in schematic is low. Currently ordering an original Dominator for schematic comparison.
 
 
 ## Common PCBs
@@ -78,7 +80,7 @@ Test hooks and pads are sprinkled on interesting signals for effect development 
 > While this system is intended to be used with one lower PCB and one upper PCB fitting together, it might be convenient to just use the lower PCB even if you do not intend to use an actual effect from this system. Doing so greatly reduces the amount of free form wiring and frees up some space on your actual effect PCB.
 
 
-### Lower Smart
+### :construction: Lower Smart
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
