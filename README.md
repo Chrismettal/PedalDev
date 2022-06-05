@@ -32,9 +32,7 @@ Individual boards as well as some kits will be stocked at Tindie!
   - [Lower](#lower)
   - [:construction: Lower Smart](#construction-lower-smart)
 - [Protoboards](#protoboards)
-  - [Proto Simple](#proto-simple)
-  - [Proto Groundplane](#proto-groundplane)
-  - [Proto Advanced SMD](#proto-advanced-smd)
+  - [:construction: Proto Simple](#construction-proto-simple)
 - [Designing your own effects](#designing-your-own-effects)
 - [:construction: Building guide](#construction-building-guide)
   - [:construction: Case](#construction-case)
@@ -94,19 +92,9 @@ Switching back to toggle mode works the same way, by holding down the button lon
 
 ## Protoboards
 
-### Proto Simple
+### :construction: Proto Simple
 
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
-
-
-### Proto Groundplane
-
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
-
-
-### Proto Advanced SMD
-
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
+Documentation to be done.
 
 
 ## Designing your own effects
