@@ -153,27 +153,37 @@ If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.co
 ![Jumpers](/img/Guide/Jumpers.png)
 
 
-4. Attach the spacers to all boards.
+4. Attach the 10mm spacers to upper board, facing the "Towards foot" side. No washers required.
 
 ![Spacers](/img/Guide/Spacers.png)
 
 
-5. Prepare the power jack by attaching two solid wires to the jack as shown.
+5. Prepare the power jack by attaching two solid wires to the jack as shown. Make sure to keep them straight for easier insertion later
 
 ![PowerWire](/img/Guide/PowerWire.png)
 
 
-6. Mount all jacks, pots and switches to the case, optionally applying the FrontPanel. Do the input/output jacks first, as you will need to have some space to tilt the jacks while inserting them both into the case.
+6. Mount all jacks, pots and switches to the case, optionally applying the FrontPanel. Do the input/output jacks first, as you will need to have some space to tilt the jacks while inserting them both into the case. They will go in VERY tight, but they will fit. For the power jack, make sure that the pins face upwards.
 
 ![Mechanicals](/img/Guide/Mechanicals.png)
 
 
-7. Place the upper board on top of the controls. Might be a bit tricky to align all the holes, but it can be made a bit easier by loosening all the controls screws. While it is also possible to first solder on all the controls, slight misalignments in height will lead to mechanical stress on the board when screwing the controls down later. Soldering it after mounting will ensure a mechanically unstressed board and still allow unmounting the board later by unscrewing the controls.
+7. Insert the pots, making sure to put each pot the correct hole for your design. Check out the silkscreen on your upper PCB for that. The nut probably won't have much flesh to grip onto so only handtighten them, or leave them out if necessary. The board will be held by screws later so it's no big deal. I like to straighten the potpins after mounting so I have  an easier time inserting the PCB in the next step. 
+
+![Pots](/img/Guide/Pots.png)
+
+
+8. If your board does not use the middle upper pot, place a spacer inside the hole where a screw will go
+
+![Spacer](/img/Guide/Spacer.png)
+
+
+9.  Place the upper board on top of the controls. Might be a bit tricky to align all the holes, but it can be made a bit easier by loosening all the controls screws. While it is also possible to first solder on all the controls, slight misalignments in height will lead to mechanical stress on the board when screwing the controls down later. Soldering it after mounting will ensure a mechanically unstressed board and still allow unmounting the board later by unscrewing the controls.
 
 ![PlacedOnControls](/img/Guide/PlacedOnControls.png)
 
 
-8. Screw down all controls tightly and solder all controls to the board.
+8. Secure the PCB with screws from the front, Screw down all controls tightly and after makind sure your pots all spin freely (not crooked),   solder all controls to the board.
 
 ![Soldered](/img/Guide/Soldered.png)
 
@@ -193,7 +203,7 @@ If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.co
 ![InsideDone](/img/Guide/InsideDone.png)
 
 
-12. All done! 
+12. Screw on the bottom plate and mount your pot knobs.
 
 ![OutsideDone](/img/Guide/OutsideDone.png)
 
