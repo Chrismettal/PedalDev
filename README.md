@@ -76,7 +76,9 @@ First PCB version `f35813b` was broken is currently being debugged. 4 Pins on `T
 
 <img src="/img/Lower/LowerBack.jpg" width="50%"/>
 
-The lower PCB consists of the bypass footswitch with a status LED, input and output jacks as well as power input, filtering and FET based reverse polarity protection. 
+The lower PCB consists of the bypass footswitch with a status LED, input and output jacks as well as power input, filtering and FET based reverse polarity protection.
+
+The Input/Output jacks are called `PJ-602B`. These are not available via LCSC sadly, but can be found all over Aliexpress. 
 
 Additionally an optional TL07X based buffer can be enabled via two jumpers. This was only added because the PCB had enough room for it and it can save room on the pedalboard instead of adding a separate buffer box. The buffer parts do NOT NEED to be populated if you intend never to use them. **Either `JP1_A1` and `JP1_B1` or `JP2_A1` and `JP2_B1` need to be set for signal to be passed through**.
 
