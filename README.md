@@ -49,7 +49,7 @@ Individual boards, predrilled cases as well as kits will be stocked at Tindie!
 
 <img src="/img/404/nice.jpg" width="200" />
 
-<img src="/img/404/nice.jpg" width="50%" height="50%"
+<img src="/img/404/nice.jpg" width="50%"/>
 
 ![404](./img/404/nice.jpg)
 
