@@ -254,8 +254,7 @@ If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.co
 
 ## Sources
 
-The following 3D models we![OutsideDone](/img/Guide/OutsideDone.jpg)
-d for the simulation renders in KiCAD and FreeCAD. Please check their respective licenses if you intend to reuse them.
+The following 3D models were used for the simulation renders in KiCAD and FreeCAD. Please check their respective licenses if you intend to reuse them.
 
 Any models that are **not** mentioned here were created by me for this project and are subject to the same [license](#license) as the whole repo.
 
