@@ -45,6 +45,9 @@ Individual boards, predrilled cases as well as kits will be stocked at Tindie!
 
 ## Specific Designs
 
+While there aren't many specific designs right now, they will be created faster now that the system is proven working. There is a wide range of devices in the works, from high gain distortions over reverbs to new, experimental stuff.
+
+
 ### 404 (:sheep: Ibanez Tubescreamer)
 
 <img src="/img/404/nice.jpg" width="50%"/>
@@ -119,7 +122,7 @@ While it does not allow for the density of SMD components it can certainly fit a
 
 I would love to merge your designs using this system into this repo!
 
-To design your own effect PCB, create a copy of the `UpperRaw` KiCAD project for the actual effect, and optionally `FrontRaw` for a PCB frontpanel design. `UpperRaw` includes in the schematic a collection of frequently used parts, set up with LCSC part numbers etc. It would be great if you add LCSC part numbers to all parts used in your design, but it is not required. After merging I will recreate the production files to the same parameters as the already created designs so don't worry about that.
+To design your own effect PCB, create a copy of the `UpperRaw` KiCAD project for the actual effect, and `FrontRaw` for a PCB frontpanel design. `UpperRaw` includes a collection of frequently used parts in the schematic, set up with LCSC part numbers etc. It would be great if you add LCSC part numbers to all parts used in your design as well. After merging I will recreate the production files to the same parameters as the already created designs so don't worry about that.
 
 ---
 
@@ -273,7 +276,8 @@ Any models that are **not** mentioned here were created by me for this project a
 ## Tools
 
 - PCBs: [KiCAD Version 6.0.5](https://www.kicad.org/)
-- 3D CAD: [FreeCAD 0.20 nightly Dev versions](https://www.freecadweb.org/) 
+- 3D CAD: [FreeCAD 0.20 nightly Dev versions](https://www.freecadweb.org/)
+- Source code: [PlatformIO](https://platformio.org/)
 
 
 ## Donations
@@ -284,4 +288,3 @@ If you like my work please consider [supporting my caffeine addiction](https://g
 ## License
 
  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
- 
