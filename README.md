@@ -32,7 +32,7 @@ Individual boards, predrilled cases as well as kits will be stocked at Tindie!
   - [Lower](#lower)
   - [:construction: Lower Smart](#construction-lower-smart)
 - [Protoboards](#protoboards)
-  - [:construction: Proto Simple](#construction-proto-simple)
+  - [Proto Simple](#proto-simple)
 - [Designing your own effects](#designing-your-own-effects)
 - [Building guide](#building-guide)
   - [Case](#case)
@@ -103,7 +103,7 @@ Switching back to toggle mode works the same way, by holding down the button lon
 
 ## Protoboards
 
-### :construction: Proto Simple
+### Proto Simple
 
 <img src="/img/ProtoSimple/nice.jpg" width="50%"/>
 
