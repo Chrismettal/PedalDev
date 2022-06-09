@@ -47,9 +47,7 @@ Individual boards, predrilled cases as well as kits will be stocked at Tindie!
 
 ### 404 (:sheep: Ibanez Tubescreamer)
 
-<p align="center">
-  <img src="/img/404/nice.jpg" width="50%"/>
-</p>
+<img src="/img/404/nice.jpg" width="50%"/>
 
 Based on the popular Tubescreamer this is obviously the first design to be done in this system.
 
@@ -57,14 +55,13 @@ Nothing crazy here, only `D1-3` feature a dual footprint to put in your favourit
 
 There are two jumpers that need to be set when building this board. `JP1` does not really do anything with the sound but chooses a filter to be sent to ground or to bias voltage as some schematics have it either way. `JP2` however allows choosing betweeen symmetrical or assymetrical clipping.
 
-![404pcb](/img/404/pcb.jpg)
-
+<img src="/img/404/pcb.jpg" width="50%"/>
 
 ### :construction: TOP (:sheep: OKKO Dominator)
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
 
-![TOP](/img/TOP/nice.jpg)
+<img src="/img/TOP/nice.jpg" width="50%"/>
 
 Based on schematic by Saruman [found here](https://www.freestompboxes.org/viewtopic.php?t=12031&hilit=c6).
 
@@ -75,9 +72,9 @@ First PCB version `f35813b` was broken is currently being debugged. 4 Pins on `T
 
 ### Lower
 
-![LowerFront](/img/Lower/LowerFront.jpg)
+<img src="/img/Lower/LowerFront.jpg" width="50%"/>
 
-![LowerBack](/img/Lower/LowerBack.jpg)
+<img src="/img/Lower/LowerBack.jpg" width="50%"/>
 
 The lower PCB consists of the bypass footswitch with a status LED, input and output jacks as well as power input, filtering and FET based reverse polarity protection. 
 
@@ -108,7 +105,7 @@ Switching back to toggle mode works the same way, by holding down the button lon
 
 ### :construction: Proto Simple
 
-![ProtoSimple](/img/ProtoSimple/nice.jpg)
+<img src="/img/ProtoSimple/nice.jpg" width="50%"/>
 
 This is a simple protoboard to use as an "upper" board, allowing for up to 6 pots, or 5 pots with one DPDT print switch.
 It features 9V and GND power rails straight through the design to allow for easy power distribution
@@ -130,6 +127,8 @@ As the system tries to use the little space in the 1590B as efficient as possibl
 
 The whole system is designed so the PCBs can be ordered from JLCPCB mostly populated, so only very little hand soldering is involved. If you order the boards finished you will mostly have to solder only the through hole components, but for some rare components that JLCPCB doesn't populate, it might be neccessary to solder some SMD components manually. SMD components go down to `0603` for passives, and `SOIC-*` / `SOT-*` for actives, which is still hand solderable without too much trouble. A hot air solder station is highly recommended though.
 
+<details>
+  <summary markdown="span">Building guide, click to expand</summary>
 
 ### Case
 
@@ -149,64 +148,64 @@ If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.co
 1. Some boards require several components to be mounted manually (Check their individual [documentation](#specific-designs)). These will include through hole parts or not easily available active parts for example. In this case, the OpAmp and input stage transistors, as well as connectors need to be placed manually. Note that the pots and switches are NOT placed at this stage!
 
 
-![404AssemblyRaw](/img/Guide/404AssemblyRaw.jpg)
+<img src="/img/Guide/404AssemblyRaw.jpg" width="50%"/>
 
-![404AssemblyDone](/img/Guide/404AssemblyDone.jpg)
+<img src="/img/Guide/404AssemblyDone.jpg" width="50%"/>
 
 ---
 
 2. The lower PCB also requires some assembly, namely attaching the LED with its spacer and soldering on the board-to-board connector wire. Make sure to set **either `JP1_A1` and `JP1_B1` or `JP2_A1` and `JP2_B1` need to be set for signal to be passed through**.
 
 
-![LowerAssemblyRaw](/img/Guide/LowerAssemblyRaw.jpg)
+<img src="/img/Guide/LowerAssemblyRaw.jpg" width="50%"/>
 
-![LowerAssemblyDone](/img/Guide/LowerAssemblyDone.jpg)
+<img src="/img/Guide/LowerAssemblyDone.jpg" width="50%"/>
 
 ---
 
 3. On most boards you will also find some configuration jumpers to be set. These include for example the `Buffered - Unbuffered` jumpers for the [Lower](#lower) PCB. Note the individual boards [documentation](#specific-designs).
 
 
-![Jumpers](/img/Guide/Jumpers.jpg)
+<img src="/img/Guide/Jumpers.jpg" width="50%"/>
 
 ---
 
 4. Attach the 10mm spacers to upper board, facing the "Towards foot" side. No washers required.
 
 
-![Spacers](/img/Guide/Spacers.jpg)
+<img src="/img/Guide/Spacers.jpg" width="50%"/>
 
 ---
 
 5. Prepare the power jack by attaching two solid wires to the jack as shown. Make sure to keep them straight for easier insertion later
 
 
-![PowerWire](/img/Guide/PowerWire.jpg)
+<img src="/img/Guide/PowerWire.jpg" width="50%"/>
 
 ---
 
 6. Mount all jacks, pots and switches to the case, optionally applying the FrontPanel. Do the input/output jacks first, as you will need to have some space to tilt the jacks while inserting them both into the case. They will go in VERY tight, but they will fit. For the power jack, make sure that the pins face upwards. Make sure to keep a single nut on the footswitch to have the correct spacing.
 
 
-![IO](/img/Guide/IO.jpg)
+<img src="/img/Guide/IO.jpg" width="50%"/>
 
-![Power](/img/Guide/Power.jpg)
+<img src="/img/Guide/Power.jpg" width="50%"/>
 
-![Footswitch](/img/Guide/Footswitch.jpg)
+<img src="/img/Guide/Footswitch.jpg" width="50%"/>
 
 ---
 
 7. Insert the pots, making sure to put each pot the correct hole for your design. Check out the silkscreen on your upper PCB for that. The nut probably won't have much flesh to grip onto so only handtighten them, or leave them out if necessary. The board will be held by screws later so it's no big deal. I like to straighten the potpins after mounting so I have  an easier time inserting the PCB in the next step. 
 
 
-![Pots](/img/Guide/Pots.jpg)
+<img src="/img/Guide/Pots.jpg" width="50%"/>
 
 ---
 
 8. If your board does not use the middle upper pot, place a spacer inside the hole where a screw will go
 
 
-![Spacer](/img/Guide/PotSpacer.jpg)
+<img src="/img/Guide/PotSpacer.jpg" width="50%"/>
 
 ---
 
@@ -217,44 +216,46 @@ If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.co
 10. Secure the PCB with screws from the front, Screw down all controls tightly and after makind sure your pots all spin freely (not crooked), then solder all controls to the board.
 
 
-![Soldered](/img/Guide/Soldered.jpg)
+<img src="/img/Guide/Soldered.jpg" width="50%"/>
 
 ---
 
 11. Place the lower board on top of the I/O
 
 
-![LowerPlaced](/img/Guide/LowerPlaced.jpg)
+<img src="/img/Guide/LowerPlaced.jpg" width="50%"/>
 
 ---
 
 12.  Solder down the lower PCB. Note that this board will NOT be easily removeable without unsoldering the controls again!
 
-![LowerSoldered](/img/Guide/LowerSoldered.jpg)
+<img src="/img/Guide/LowerSoldered.jpg" width="50%"/>
 
 ---
 
 13.  Plug in the board-to-board connector.
 
-![Plug](/img/Guide/Plug.jpg)
+<img src="/img/Guide/Plug.jpg" width="50%"/>
 
-![InsideDone](/img/Guide/InsideDone.jpg)
+<img src="/img/Guide/InsideDone.jpg" width="50%"/>
 
 ---
 
 14.  Screw on the bottom plate and mount your pot knobs.
 
-![OutsideDone](/img/Guide/OutsideDone.jpg)
+<img src="/img/Guide/OutsideDone.jpg" width="50%"/>
 
 ---
 
 15. Done!
 
----
+</details>
+
 
 ## Sources
 
-The following 3D models were used for the simulation renders in KiCAD and FreeCAD. Please check their respective licenses if you intend to reuse them.
+The following 3D models we![OutsideDone](/img/Guide/OutsideDone.jpg)
+d for the simulation renders in KiCAD and FreeCAD. Please check their respective licenses if you intend to reuse them.
 
 Any models that are **not** mentioned here were created by me for this project and are subject to the same [license](#license) as the whole repo.
 
