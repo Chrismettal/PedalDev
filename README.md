@@ -47,11 +47,9 @@ Individual boards, predrilled cases as well as kits will be stocked at Tindie!
 
 ### 404 (:sheep: Ibanez Tubescreamer)
 
-<img src="/img/404/nice.jpg" width="200" />
-
-<img src="/img/404/nice.jpg" width="50%"/>
-
-![404](./img/404/nice.jpg)
+<p align="center">
+  <img src="/img/404/nice.jpg" width="50%"/>
+</p>
 
 Based on the popular Tubescreamer this is obviously the first design to be done in this system.
 
