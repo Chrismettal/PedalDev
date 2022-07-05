@@ -27,8 +27,8 @@ Individual boards, predrilled cases as well as kits will be stocked at Tindie!
 
 - [Specific Designs](#specific-designs)
   - [404 (:sheep: Ibanez Tubescreamer)](#404-sheep-ibanez-tubescreamer)
+  - [YOU WHAT?! (:sheep: emma electronic PisdiYAUwot)](#you-what-sheep-emma-electronic-pisdiyauwot)
   - [:construction: TOP (:sheep: OKKO Dominator)](#construction-top-sheep-okko-dominator)
-  - [:construction: YOU WHAT?! (:sheep: emma electronic PisdiYAUwot)](#construction-you-what-sheep-emma-electronic-pisdiyauwot)
 - [Common PCBs](#common-pcbs)
   - [Lower](#lower)
   - [:construction: Lower Smart](#construction-lower-smart)
@@ -62,6 +62,13 @@ There are two jumpers that need to be set when building this board. `JP1` does n
 <img src="/img/404/pcb.jpg" width="50%"/>
 
 
+### YOU WHAT?! (:sheep: emma electronic PisdiYAUwot)
+
+<img src="/img/YOU_WHAT/nice.jpg" width="50%"/>
+
+Very cheap in parts but incredibly tight high gain distortion with lots of attack.
+
+
 ### :construction: TOP (:sheep: OKKO Dominator)
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
@@ -70,14 +77,7 @@ There are two jumpers that need to be set when building this board. `JP1` does n
 
 Based on schematic by Saruman [found here](https://www.freestompboxes.org/viewtopic.php?t=12031&hilit=c6).
 
-First PCB version `f35813b` was broken is currently being debugged. 4 Pins on `TL074` were swapped, `ICL7660` does not work when `BOOST` mode is set (But **`ICL7660S`** does..), and input stage sounds super starved, more like a bassy fuzz than a distortion. Simulation seems to confirm this so confidence in schematic is low. Currently ordering an original Dominator for schematic comparison.
-
-
-### :construction: YOU WHAT?! (:sheep: emma electronic PisdiYAUwot)
-
-:construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
-
-Just started reverse engineering schematic. Seems very much based on the ReezaFRATzitz, featuring the same `4069` based hex inverter as the only tone shaping active component. Very cheap in parts but awesome sounding high gain distortion.
+First PCB version `f35813b` was broken is currently being debugged. 4 Pins on `TL074` were swapped, `ICL7660` does not work when `BOOST` mode is set (But **`ICL7660S`** does..), and input stage sounds super starved, more like a bassy fuzz than a distortion. Simulation seems to confirm this so confidence in schematic is low. Currently getting hold of an original Dominator for schematic comparison.
 
 
 ## Common PCBs
