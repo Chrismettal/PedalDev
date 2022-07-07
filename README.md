@@ -79,6 +79,8 @@ Based on schematic by Saruman [found here](https://www.freestompboxes.org/viewto
 
 First PCB version `f35813b` was broken is currently being debugged. 4 Pins on `TL074` were swapped, `ICL7660` does not work when `BOOST` mode is set (But **`ICL7660S`** does..), and input stage sounds super starved, more like a bassy fuzz than a distortion. Simulation seems to confirm this so confidence in schematic is low. Currently getting hold of an original Dominator for schematic comparison.
 
+Two jumpers on board revision `f35813b` are for debugging the power stage around the `7660` but will probably be removed or clarified on the fixed revision
+
 
 ## Common PCBs
 
@@ -146,7 +148,9 @@ The whole system is designed so the PCBs can be ordered from JLCPCB mostly popul
 
 ### Case
 
-If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.com/stores/binary-6/), there is a printable drill guide available. Otherwise, there will be a techdraw sheet with all the dimensions.
+If you have access to a 3D printer (or to my [Tindie Shop](https://www.tindie.com/stores/binary-6/)), there is a printable drill guide available. Otherwise, there will be a techdraw sheet with all the dimensions. At the [shop](https://www.tindie.com/stores/binary-6/) you will also find predrilled, black cases directly manufactured by Hammond.
+
+All models are compatible with the same drill layout. Holes not required for a specific board will be hidden by the front plate, so the fully stacked 6 controls variant works for every model.
 
 1. Put the case in the drill guide and use a center punch to mark out all the holes to be drilled
 
@@ -284,8 +288,8 @@ Any models that are **not** mentioned here were created by me for this project a
 
 ## Tools
 
-- PCBs: [KiCAD Version 6.0.5](https://www.kicad.org/)
-- 3D CAD: [FreeCAD 0.20 nightly Dev versions](https://www.freecadweb.org/)
+- PCBs: [KiCAD 6](https://www.kicad.org/)
+- 3D CAD: [FreeCAD 0.20](https://www.freecadweb.org/)
 - Source code: [PlatformIO](https://platformio.org/)
 
 
