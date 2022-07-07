@@ -1,0 +1,7 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"C1","100uF","CP_Radial_D5.0mm_P2.00mm",13.147112,-9.906000,0.000000,bottom
+"D1","LED","LED_D5.0mm",-13.716000,0.000000,0.000000,bottom
+"J1","AudioJack3","Audio_Jack_PJ-602B",20.605000,15.000000,180.000000,bottom
+"J2","AudioJack3","Audio_Jack_PJ-602B",-20.600000,15.000000,0.000000,bottom
+"J3","Barrel_Jack","DC_Barrel_Jack_Thinline_Wired_Standing",21.567000,0.000000,180.000000,bottom
+"SW1","SW_Push_3PDT","Footswitch_3PDT",0.000000,0.000000,180.000000,bottom
