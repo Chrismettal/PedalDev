@@ -2,7 +2,7 @@
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/license-CC%20BY--SA%204.0-blue?style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Shop: Tindie](https://img.shields.io/badge/shop-Tindie-blue?style=flat-square)](https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium)
-[![Donations: Coffee](https://img.shields.io/badge/donations-Coffee-brown?style=flat-square)](https://gitlab.com/Chrismettal#donations)
+[![Donations: Coffee](https://img.shields.io/badge/donations-Coffee-brown?style=flat-square)](https://github.com/Chrismettal#donations)
 
 This is a convenient system for quickly creating stompboxes, as well as a collection of designs made with this system.
 
@@ -20,8 +20,7 @@ Individual boards, predrilled cases as well as kits will be stocked at Tindie!
 
 <a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
 
-**If you like my work please consider [supporting my caffeine addiction](https://gitlab.com/Chrismettal#donations)!**
-
+**If you like my work please consider [supporting my caffeine addiction](https://github.com/Chrismettal#donations)!**
 
 ## Table of contents <!-- omit in toc -->
 
@@ -43,11 +42,9 @@ Individual boards, predrilled cases as well as kits will be stocked at Tindie!
 - [Donations](#donations)
 - [License](#license)
 
-
 ## Specific Designs
 
 While there aren't many specific designs right now, they will be created faster now that the system is proven working. There is a wide range of devices in the works, from high gain distortions over reverbs to new, experimental stuff.
-
 
 ### 404 (:sheep: Ibanez Tubescreamer)
 
@@ -60,7 +57,6 @@ Nothing crazy here, only `D1-3` feature a dual footprint to put in your favourit
 There are two jumpers that need to be set when building this board. `JP1` does not really do anything with the sound but chooses a filter to be sent to ground or to bias voltage as some schematics have it either way. `JP2` however allows choosing betweeen symmetrical or assymetrical clipping.
 
 <img src="/img/404/pcb.jpg" width="50%"/>
-
 
 ### YOU WHAT?! (:sheep: emma electronic PisdiYAUwot)
 
@@ -80,7 +76,6 @@ Based on schematic by Saruman [found here](https://www.freestompboxes.org/viewto
 First PCB version `f35813b` was broken is currently being debugged. 4 Pins on `TL074` were swapped, `ICL7660` does not work when `BOOST` mode is set (But **`ICL7660S`** does..), and input stage sounds super starved, more like a bassy fuzz than a distortion. Simulation seems to confirm this so confidence in schematic is low. Currently getting hold of an original Dominator for schematic comparison.
 
 Two jumpers on board revision `f35813b` are for debugging the power stage around the `7660` but will probably be removed or clarified on the fixed revision
-
 
 ## Common PCBs
 
@@ -104,7 +99,6 @@ Test hooks and pads are sprinkled on interesting signals for effect development 
 > 
 > While this system is intended to be used with one lower PCB and one upper PCB fitting together, it might be convenient to just use the lower PCB even if you do not intend to use an actual effect from this system. Doing so greatly reduces the amount of free form wiring and frees up some space on your actual effect PCB.
 
-
 ### :construction: Lower Smart
 
 :construction: :construction: :construction: **Work in progress** :construction: :construction: :construction:
@@ -116,7 +110,6 @@ Holding the button down for 9 seconds, both LEDs will start blinking, signaling 
 In momentary mode, the effect will only be on while the button is held. While the effect is on, a :construction: colored LED will be on in momentary mode.
 Switching back to toggle mode works the same way, by holding down the button long enough.
 
-
 ## Protoboards
 
 ### Proto Simple
@@ -127,7 +120,6 @@ This is a simple protoboard to use as an "upper" board, allowing for up to 6 pot
 It features 9V and GND power rails straight through the design to allow for easy power distribution
 
 While it does not allow for the density of SMD components it can certainly fit a lot of designs.
-
 
 ## Designing your own effects
 
@@ -269,7 +261,6 @@ All models are compatible with the same drill layout. Holes not required for a s
 
 </details>
 
-
 ## Sources
 
 The following 3D models were used for the simulation renders in KiCAD and FreeCAD. Please check their respective licenses if you intend to reuse them.
@@ -285,18 +276,15 @@ Any models that are **not** mentioned here were created by me for this project a
 | DC barrel jack      | https://grabcad.com/library/5-5mm-panel-mount-dc-jack-1 |
 | LED 5mm             | https://grabcad.com/library/led-5mm-1#!                 |
 
-
 ## Tools
 
 - PCBs: [KiCAD 6](https://www.kicad.org/)
 - 3D CAD: [FreeCAD 0.20](https://www.freecadweb.org/)
 - Source code: [PlatformIO](https://platformio.org/)
 
-
 ## Donations
 
-If you like my work please consider [supporting my caffeine addiction](https://gitlab.com/Chrismettal#donations)!
-
+**If you like my work please consider [supporting my caffeine addiction](https://github.com/Chrismettal#donations)!**
 
 ## License
 
